@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap");
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  overscroll-behavior: none;
+  margin: 0;
+  background-color: #0099ff;
+  user-select: none; /* 防止選取文字 */
+  -webkit-user-select: none;
+}
+
+/* 漫畫風格放射狀背景 */
+.comic-burst {
+  background: repeating-conic-gradient(
+    #0099ff 0deg 15deg,
+    #00ccff 15deg 30deg
+  );
+}
+
+/* 點點紋理背景 */
+.comic-dots {
+  background-image: radial-gradient(#ffffff 20%, transparent 20%);
+  background-color: transparent;
+  background-position: 0 0;
+  background-size: 20px 20px;
+  opacity: 0.2;
+}
+
+/* 隱藏滾動條 */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
